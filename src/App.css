@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-background {
   display: flex;
+  min-height: 100vh;
   flex-direction: column;
+  background-color: #1cdbf5;
+  text-align: center;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.heading-text {
+  color: #1cdbf5;
+  font-size: 42px;
+  font-weight: bolder;
+  text-align: center;
+  margin: 50px;
+  background-color: #131a28;
+  padding: 15px 25px;
+  border-radius: 8px;
+}
+.task-container {
+  display: flex;
+  max-width: 70vh;
+  height: 100%;
+  flex-direction: column;
+  text-align: center;
+  background-color: #131a28;
   color: white;
+  border-radius: 8px;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30px 20px;
+  margin: 0 auto 20px;
+  min-height: 205px;
 }
-
-.App-link {
-  color: #61dafb;
+.text-input {
+  border: #1cdbf5 2px solid;
+  outline: none;
+  border-radius: 8px;
+  width: 250px;
+  font-size: 18px;
+  padding: 10px 15px;
+  margin: 0 15px 15px 15px;
+  font-weight: bold;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.add-button {
+  background-color: #1cdbf5;
+  outline: none;
+  border: none;
+  color: #131a28;
+  font-size: 17px;
+  font-weight: bolder;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-align: center;
+  margin: 0 15px 15px 15px;
+  cursor: pointer;
+}
+.no-item {
+  color: #1cdbf5;
+  font-size: 17px;
+  font-weight: bolder;
+  text-align: center;
+  margin: 50px;
+}
+.list-item {
+  display: flex;
+  background-color: #1cdbf5;
+  border-radius: 8px;
+  width: 400px;
+  font-size: 10px;
+  padding: 10px 15px;
+  margin: 15px 0;
+  color: #131a28;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: bold;
+  text-align: start;
+  align-items: center;
+  cursor: pointer;
+}
+.delete-icon {
+  height: 26px;
+  cursor: pointer;
+}
+.footer-text {
+  color: #131a28;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin: 18px;
+  padding: 15px 25px;
 }
